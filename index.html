@@ -4,26 +4,26 @@
 
 <p>Miriway is a starting point for creating a Wayland based desktop environment using Mir.</p>
 
-<p>At the core of Miriway is `miriway-shell`, a Mir based Wayland compositor that provides:</p>
+<p>At the core of Miriway is <code>miriway-shell</code>, a Mir based Wayland compositor that provides:</p>
 <ul>
     <li>A "floating windows" window managament policy;</li>
-    <li>Support for Wayland (and via `Xwayland`) X11 applications;</li>
+    <li>Support for Wayland (and via <code>Xwayland</code>) X11 applications;</li>
     <li>Dynamic workspaces;</li>
     <li>Additional Wayland support for "shell components" such as panels and docs; and,</li>
     <li>Configurable shortcuts for launching standard apps such as launcher and terminal emulator.</li>
 </ul>
 
-<p>In addition to `miriway-shell`, Miriway has:</p>
+<p>In addition to <code>miriway-shell</code>, Miriway has:</p>
 
 <ul>
-* A "terminal emulator finder" script `miriway-terminal`, that works with most terminal emulators;</li>
-* A launch script `miriway` to simplify starting Miriway;</li>
-* A default configuration file `miriway-shell.config`; and,</li>
-* A greeter configuration `miriway.desktop` so Miriway can be selected at login</li>
+* A "terminal emulator finder" script <code>miriway-terminal</code>, that works with most terminal emulators;</li>
+* A launch script <code>miriway</code> to simplify starting Miriway;</li>
+* A default configuration file <code>miriway-shell.config</code>; and,</li>
+* A greeter configuration <code>miriway.desktop</code> so Miriway can be selected at login</li>
 </ul>
 
 <p>Miriway has been tested with shell components from several desktop environments
-and there are notes on enabling these in `miriway-shell.config`.</p>
+and there are notes on enabling these in <code>miriway-shell.config</code>.</p>
 
 <h2>In development</h2>
 
@@ -47,9 +47,9 @@ sudo apt install mir-graphics-drivers-desktop
 </code>
 
 <p>The default install is minimal and provides a basic shell and a default
-`Ctrl-Alt-T` command that tries to find a terminal emulator (by using
-`miriway-terminal`). If you don't already have a terminal emulator
-installed, then `sudo apt install xfce4-terminal` is a simple option.</p>
+</code>Ctrl-Alt-T</code> command that tries to find a terminal emulator (by using
+</code>miriway-terminal</code>). If you don't already have a terminal emulator
+installed, then <code>sudo apt install xfce4-terminal</code> is a simple option.</p>
 
 <h2>Building and Installing</h2>
 
@@ -66,7 +66,7 @@ cmake --build .
 sudo cmake --build . -- install
 </code>
 
-<p>Now you can run with `miriway`, or select "Miriway" from the login screen.</p>
+<p>Now you can run with <code>miriway</code>, or select "Miriway" from the login screen.</p>
 
 <h2>Keyboard shortcuts</h2>
 
@@ -121,11 +121,11 @@ sudo cmake --build . -- install
     </tr>
 </table>
 
-<h3>Keyboard shortcuts using `Meta` and `Ctrl-Alt` can be added or amended</h3>
+<h3>Keyboard shortcuts using <code>Meta</code> and <code>Ctrl-Alt</code> can be added or amended</h3>
 
-<p>These (and other) defaults are specified in `/etc/xdg/xdg-miriway/miriway-shell.config` but can be overridden
-in `~/.config/miriway-shell.config`. You should typically copy and edit the default config file. It provides
-some examples using components from existing desktop environments. (And the corresponding `apt install` commands)</p>
+<p>These (and other) defaults are specified in <code>/etc/xdg/xdg-miriway/miriway-shell.config</code> but can be overridden
+in <code>~/.config/miriway-shell.config</code>. You should typically copy and edit the default config file. It provides
+some examples using components from existing desktop environments. (And the corresponding <code>apt install</code> commands)</p>
 
 <table>
     <tr>
@@ -140,8 +140,8 @@ some examples using components from existing desktop environments. (And the corr
 
 <h2>Example configurations</h2>
 
-<p>I've provided an `example-configs` subdirectory to hold scripts to set up example configurations.</p>
+<p>I've provided an <code>example-configs</code> subdirectory to hold scripts to set up example configurations.</p>
 
-<p>In particular, I've added `example-configs/miriway-config-alan_g.bash` which sets up some options I've been trying.
+<p>In particular, I've added <code>example-configs/miriway-config-alan_g.bash</code> which sets up some options I've been trying.
 The script works fine on Ubuntu 23.04, but isn't portable (it uses apt and assumes packages are in the archive).
 If you have an alternative configuration, please share!</p>
